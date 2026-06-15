@@ -54,8 +54,6 @@ function setTime() {
 }
 
 function tick() {
-    console.log(currentTime);
-
     if (currentTime < 0) {
         return;
     }
