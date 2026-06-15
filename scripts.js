@@ -36,7 +36,7 @@ function clickBody() {
         return;
     }
 
-    navigator.vibrate(500);
+    navigator.vibrate(300);
 
     if (started) {
         makeScreenLightGreen();
