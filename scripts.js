@@ -35,6 +35,9 @@ function clickBody() {
         skipTheClick = false;
         return;
     }
+
+    navigator.vibrate(500);
+
     if (started) {
         makeScreenLightGreen();
         document.getElementById("number").innerHTML = time;
@@ -54,8 +57,6 @@ function setTime() {
 }
 
 function tick() {
-    console.log(currentTime);
-
     if (currentTime < 0) {
         return;
     }
